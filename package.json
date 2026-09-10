@@ -6,17 +6,40 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:viewer": "node scripts/viewer-check.mjs",
+    "eval:prompt": "node scripts/prompt-eval.mjs",
+    "check:resilience": "node scripts/resilience-check.mjs",
+    "eval:retry": "node scripts/retry-eval.mjs",
+    "eval:agentic": "node scripts/agentic-eval.mjs",
+    "check:merge": "node scripts/merge-check.mjs",
+    "eval:motion": "node scripts/motion-eval.mjs",
+    "eval:tripod": "node scripts/tripod-agentic.mjs",
+    "eval:structural": "node scripts/structural-eval.mjs",
+    "check:gate": "node scripts/gate-check.mjs",
+    "check:severity": "node scripts/severity-check.mjs",
+    "eval:severity": "node scripts/severity-eval.mjs",
+    "check:replicate": "node scripts/replicate-check.mjs",
+    "check:complexity": "node scripts/complexity-check.mjs",
+    "eval:decompose": "node scripts/decompose-eval.mjs",
+    "check:audit": "node scripts/audit-check.mjs",
+    "check:inventory": "node scripts/inventory-check.mjs",
+    "eval:inventory": "node scripts/inventory-eval.mjs"
   },
   "dependencies": {
+    "@jscad/modeling": "^2.13.0",
+    "@supabase/supabase-js": "^2.116.0",
     "@tailwindcss/vite": "^4.1.13",
     "lucide-react": "^0.542.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "tailwindcss": "^4.1.13"
+    "tailwindcss": "^4.1.13",
+    "three": "^0.186.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.0.2",
+    "jsdom": "^30.0.1",
+    "puppeteer-core": "^25.10.0",
     "vite": "^7.1.4"
   }
 }
